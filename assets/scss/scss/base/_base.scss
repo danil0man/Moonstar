@@ -1,0 +1,53 @@
+// Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap');
+
+:root {
+	scroll-behavior: smooth;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	box-sizing: border-box;
+	// Font Family
+	font-family: 'Barlow', sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	// text color
+	color: $text-color;
+	// Background Color
+	background: #311768;
+	overflow-x: hidden;
+}
+
+img {
+	max-width: 100%;
+}
+
+// Remove the outline and decorations
+a:focus,
+input:focus,
+textarea:focus,
+button:focus {
+	text-decoration: none;
+	outline: none;
+}
+a:focus,
+a:hover {
+	text-decoration: none;
+}
+i,
+span,
+a {
+	display: inline-block;
+}
+
+// List reset
+ul,
+ol {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}

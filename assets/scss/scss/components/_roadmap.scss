@@ -1,0 +1,240 @@
+.roadmap-area {
+	position: relative;
+	z-index: 10;
+	padding-top: 10rem;
+	padding-bottom: 10rem;
+}
+
+// Section Title
+//Sub
+.roadmap__sub {
+	font-size: 2.4rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	color: $secondary-color;
+	position: relative;
+
+	// Line before
+	&::before {
+		position: absolute;
+		content: '';
+		left: -10rem;
+		top: 50%;
+		-webkit-transform: translateY(-50%);
+		transform: translateY(-50%);
+		height: 2px;
+		width: 9rem;
+		background: $secondary-color;
+		@media #{$xs} {
+			width: 2rem;
+			left: -3rem;
+		}
+	}
+
+	// Line After
+	&::after {
+		position: absolute;
+		content: '';
+		right: -10rem;
+		top: 50%;
+		-webkit-transform: translateY(-50%);
+		transform: translateY(-50%);
+		height: 2px;
+		width: 9rem;
+		background: $secondary-color;
+		@media #{$xs} {
+			width: 2rem;
+			right: -3rem;
+		}
+	}
+}
+
+// Title
+.roadmap__title {
+	font-size: 5rem;
+	line-height: 6rem;
+	font-weight: 600;
+	padding: 0.8rem 1rem 5rem;
+	text-transform: uppercase;
+	color: white;
+	@media #{$xs} {
+		font-size: 3rem;
+		line-height: 4rem;
+	}
+	@media #{$sm} {
+		font-size: 3.8rem;
+		line-height: 4.8rem;
+	}
+	@media #{$lg} {
+		font-size: 3.8rem;
+		line-height: 4.8rem;
+	}
+}
+
+// Roadmap
+.roadmap__container {
+	position: relative;
+	width: 90%;
+	max-width: 80rem;
+	margin: 0 auto;
+
+	// Create Vertical Line
+	&::before {
+		content: '';
+		position: absolute;
+		margin-left: -2px;
+		left: 50%;
+		height: 100%;
+		width: 0.5rem;
+		background: $secondary-color;
+		@media #{$md} {
+			top: 0;
+			left: 0.8rem;
+		}
+		@media #{$xs} {
+			top: 0.7rem;
+			left: 0.8rem;
+		}
+		@media #{$sm} {
+			top: 0;
+			left: 0.8rem;
+		}
+	}
+}
+
+// Roadmap Card
+.roadmap {
+	position: relative;
+	margin: 6rem 0;
+
+	&::after {
+		content: '';
+		display: table;
+		clear: both;
+	}
+
+	// Remove Margin from top and Botton card
+	&:first-child {
+		margin-top: 0;
+	}
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+	// Smaller Media
+	@media #{$md} {
+		margin: 3rem 0;
+	}
+	@media #{$xs} {
+		margin: 3rem 0;
+	}
+	@media #{$sm} {
+		margin: 3rem 0;
+	}
+
+	// Milestone Indicator
+	&__point {
+		position: absolute;
+		top: 0;
+		left: 50%;
+		width: 2.5rem;
+		height: 2.5rem;
+		margin-left: -1.2rem;
+		border-radius: 50%;
+		border: solid 0.5rem $secondary-color;
+		background: #311768;
+		transform: translateZ(0);
+
+		&--complete {
+			background: $secondary-color;
+		}
+		// Smaller Media
+		@media #{$md} {
+			left: -0.5rem;
+			top: 0.7rem;
+			width: 2rem;
+			height: 2rem;
+			transform: none;
+		}
+		@media #{$xs} {
+			left: -0.5rem;
+			top: 0.7rem;
+			width: 2rem;
+			height: 2rem;
+			transform: none;
+		}
+		@media #{$sm} {
+			left: -0.5rem;
+			top: 0.7rem;
+			width: 2rem;
+			height: 2rem;
+			transform: none;
+		}
+	}
+
+	// Card Stylings
+	&__card {
+		position: relative;
+		margin-left: 2rem;
+		margin-top: -3px;
+	}
+
+	// Numbers or Dates
+	&__nr {
+		padding: 0 0 0.6rem 0;
+		text-transform: uppercase;
+		color: $theme-color;
+		font-weight: 700;
+		letter-spacing: 1px;
+		margin-bottom: 0.7rem;
+		font-size: 2rem;
+	}
+
+	&__heading {
+		color: $white;
+		font-size: 2.6rem;
+		text-transform: uppercase;
+	}
+
+	// Text
+	&__text {
+		font-size: 2rem;
+		line-height: 3rem;
+		color: $text-color;
+		padding-top: 1.1rem;
+		@media #{$lg} {
+			font-size: 1.6rem;
+			line-height: 2.6rem;
+		}
+	}
+}
+// This was implemented mobile first and would had been quite tedious to make with the current breakpoints
+@media only screen and (min-width: 1170px) {
+	.roadmap__card {
+		width: 45%;
+		text-align: right;
+		margin-left: 0;
+	}
+
+	.roadmap__nr {
+		position: absolute;
+		padding: 0.4rem 0;
+		width: 100%;
+		left: 122%;
+		top: -0.5rem;
+		text-align: left;
+	}
+
+	// Interval nr and content area
+	.roadmap:nth-child(odd) .roadmap__card {
+		float: right;
+		text-align: left;
+		margin-left: 0;
+	}
+
+	.roadmap:nth-child(odd) .roadmap__nr {
+		left: auto;
+		right: 120%;
+		text-align: right;
+	}
+}

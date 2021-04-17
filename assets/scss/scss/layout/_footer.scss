@@ -1,0 +1,80 @@
+.footer {
+	padding-top: 12rem;
+	padding-bottom: 25rem;
+	position: relative;
+	@media #{$xs} {
+		padding: 10rem 0;
+	}
+
+	// Headings
+	&__title {
+		font-size: 2.4rem;
+		text-shadow: 0 1px 2px rgba($black, 0.4);
+		letter-spacing: 0.4rem;
+		font-weight: 600;
+		text-transform: uppercase;
+		color: $theme-color;
+		padding-bottom: 3rem;
+	}
+
+	// Links
+	& a {
+		font-size: 2rem;
+		line-height: 4rem;
+		color: $white;
+		@include transition(0.3s);
+		&:hover {
+			color: $theme-color;
+		}
+
+		// Give Space to Social Media Icons
+		& i {
+			margin-right: 1rem;
+		}
+	}
+
+	// Extra Part
+	&__extra {
+		margin-top: 8.5rem;
+		@media #{$xs} {
+			text-align: center;
+			flex-wrap: wrap;
+			justify-content: center !important;
+		}
+		@media #{$sm} {
+			text-align: center;
+			flex-wrap: wrap;
+			justify-content: space-between !important;
+		}
+		@media (max-width: 991.98px) {
+			flex-direction: column;
+		}
+	}
+	// Copyright Area
+	&__copyright {
+		font-size: 1.5rem;
+		font-weight: 500;
+		color: $text-color;
+		@media #{$xs} {
+			padding-top: 20px;
+		}
+		@media #{$sm} {
+			padding-top: 0px;
+		}
+	}
+
+	&__creator {
+		font-size: 1.5rem;
+		font-weight: 500;
+		color: $text-color;
+	}
+}
+
+.signature {
+	@include transition(0.5s);
+	cursor: pointer;
+	&:hover {
+		color: $secondary-color;
+		transform: scale(2) translateY(2rem);
+	}
+}

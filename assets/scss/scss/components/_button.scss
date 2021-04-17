@@ -1,0 +1,80 @@
+/* Button Configurations */
+.main-btn {
+	// Display Inline-block to give it widht and heights
+	display: inline-block;
+	// Black Font Weight
+	font-weight: 700;
+	// Center Text
+	text-align: center;
+	white-space: nowrap;
+	text-transform: uppercase;
+	vertical-align: middle;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	// Min width to create buttons as long
+	min-width: 15rem;
+	border: 0px;
+	padding: 0 3.2rem;
+	font-size: 1.4rem;
+	line-height: 5rem;
+	color: #fff !important;
+	cursor: pointer;
+	// Bring the Buttons top
+	z-index: 5;
+	// Animation Effect on hover
+	-webkit-transition: all 0.4s ease-out 0s;
+	transition: all 0.4s ease-out 0s;
+	border-radius: 4px;
+	background: -webkit-gradient(
+		linear,
+		left top,
+		right top,
+		from(#c90075),
+		color-stop(50%, #de00ac),
+		to(#c90075)
+	);
+	background: linear-gradient(to right, #c90075 0%, #de00ac 50%, #c90075 100%);
+	background-size: 200% auto;
+	letter-spacing: 1px;
+	-webkit-box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.1),
+		inset 0px -1px 1px 0px rgba(255, 255, 255, 0.2);
+	box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.1),
+		inset 0px -1px 1px 0px rgba(255, 255, 255, 0.2);
+}
+.main-btn:hover {
+	background-position: right center;
+}
+// Button 2
+.main-btn.main-btn-2 {
+	background: -webkit-gradient(
+		linear,
+		left top,
+		right top,
+		from(#0065e8),
+		color-stop(50%, #11a2f1),
+		to(#0065e8)
+	);
+	background: linear-gradient(to right, #0065e8 0%, #11a2f1 50%, #0065e8 100%);
+	background-size: 200% auto;
+}
+.main-btn.main-btn-2:hover {
+	background-position: right center;
+}
+// Button 3
+.main-btn.main-btn-3 {
+	background: -webkit-gradient(
+		linear,
+		left top,
+		right top,
+		from(#ffa600),
+		color-stop(50%, #ffc50c),
+		to(#ffa600)
+	);
+	background: linear-gradient(to right, #ffa600 0%, #ffc50c 50%, #ffa600 100%);
+	background-size: 200% auto;
+}
+.main-btn.main-btn-3:hover {
+	background-position: right center;
+}

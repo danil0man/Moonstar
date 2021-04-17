@@ -1,0 +1,53 @@
+.moon-features-area {
+	padding-top: 1rem;
+	position: relative;
+	z-index: 11;
+}
+
+// Feature Card
+.feature {
+	position: relative;
+
+	// Separation Lines
+	&::before {
+		position: absolute;
+		content: '';
+		right: -1.5rem;
+		top: 50%;
+		transform: translateY(-50%);
+		width: 1px;
+		height: 28.5rem;
+		background: #462f77;
+	}
+
+	// Icon
+	&__img {
+		width: 15rem;
+		@include transition(0.3s);
+	}
+
+	// Title
+	&__title {
+		font-size: 2.4rem;
+		font-weight: 600;
+		color: $white;
+		padding-top: 2.5rem;
+	}
+
+	// Text
+	&__text {
+		max-width: 29rem;
+		display: inline-block;
+		color: #ada2c3;
+		font-size: 1.8rem;
+		line-height: 3rem;
+		padding-top: 2rem;
+	}
+
+	// Hover effect
+	&:hover {
+		& img {
+			transform: scale(1.1);
+		}
+	}
+}
