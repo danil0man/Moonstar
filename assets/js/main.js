@@ -8,11 +8,7 @@ sectionOneOptions = {
 
 const sectionOneObserver = new IntersectionObserver(function(entries, sectionOneObserver) {
     entries.forEach(entry => {
-        if(!entry.isIntersecting) {
-            header.classList.add('sticky');
-        } else {
-            header.classList.remove('sticky');
-        }
+        !entry.isIntersecting ? header.classList.add('sticky') : header.classList.remove('sticky');
     })
 }, sectionOneOptions);
 
@@ -31,11 +27,7 @@ hamburger.addEventListener('click', () => {
 const toTop = document.querySelector('.to-top');
 
 window.addEventListener('scroll', () => {
-    if (window.pageYOffset > 100) {
-        toTop.classList.add('show');
-    } else {
-        toTop.classList.remove('show');
-    }
+    window.pageYOffset > 100 ? toTop.classList.add('show') : toTop.classList.remove('show');
 })
 
 

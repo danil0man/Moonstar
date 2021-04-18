@@ -20,20 +20,16 @@
 	margin-left: -8rem;
 	margin-right: 8rem;
 	@media #{$laptop} {
-		margin-left: 0;
-		margin-right: 0;
+		margin: 0;
 	}
 	@media #{$lg} {
-		margin-left: 0;
-		margin-right: 0;
+		margin: 0;
 	}
 	@media #{$md} {
-		margin-left: 0;
-		margin-right: 0;
+		margin: 0;
 	}
 	@media #{$xs} {
-		margin-left: 0;
-		margin-right: 0;
+		margin: 0;
 	}
 	& img {
 		width: 100%;
@@ -42,12 +38,10 @@
 // Content Area
 .moon-about-content {
 	@media #{$md} {
-		margin-top: 3rem;
-		margin-bottom: 3rem;
+		margin: 3rem 0;
 	}
 	@media #{$xs} {
-		margin-top: 3rem;
-		margin-bottom: 3rem;
+		margin: 3rem 0;
 	}
 }
 
@@ -69,7 +63,7 @@
 			content: '';
 			left: 0;
 			top: 50%;
-			transform: translateY(-50%);
+			@include transform(translateY(-50%));
 			height: 2px;
 			width: 5rem;
 			background: $secondary-color;

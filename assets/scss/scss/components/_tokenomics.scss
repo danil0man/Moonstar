@@ -21,8 +21,7 @@
 		content: '';
 		left: -10rem;
 		top: 50%;
-		-webkit-transform: translateY(-50%);
-		transform: translateY(-50%);
+		@include transform(translateY(-50%));
 		height: 2px;
 		width: 9rem;
 		background: $theme-color;
@@ -38,8 +37,7 @@
 		content: '';
 		right: -10rem;
 		top: 50%;
-		-webkit-transform: translateY(-50%);
-		transform: translateY(-50%);
+		@include transform(translateY(-50%));
 		height: 2px;
 		width: 9rem;
 		background: $theme-color;
@@ -90,10 +88,8 @@
 	background: linear-gradient(to right, #311768 0%, #4a0094 50%, #311768 100%);
 	background-size: 200% auto;
 	letter-spacing: 1px;
-	-webkit-box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.1),
-		inset 0px -1px 1px 0px rgba(255, 255, 255, 0.2);
-	box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.1),
-		inset 0px -1px 1px 0px rgba(255, 255, 255, 0.2);
+	@include box-shadow(0px 2px 0px 0px rgba(0, 0, 0, 0.1));
+
 	&:hover {
 		background-position: right center;
 	}
@@ -112,19 +108,19 @@
 
 	// Box Shadows
 	&-1 {
-		box-shadow: 1rem 0.5rem 1rem rgba($black-soft, 0.3);
+		@include box-shadow(1rem 0.5rem 1rem rgba($black-soft, 0.3));
 	}
 
 	&-2 {
-		box-shadow: -1rem 0.5rem 1rem rgba($black-soft, 0.3);
+		@include box-shadow(-1rem 0.5rem 1rem rgba($black-soft, 0.3));
 	}
 
 	&-3 {
-		box-shadow: 1rem -0.5rem 1rem rgba($black-soft, 0.3);
+		@include box-shadow(1rem -0.5rem 1rem rgba($black-soft, 0.3));
 	}
 
 	&-4 {
-		box-shadow: -1rem -0.5rem 1rem rgba($black-soft, 0.3);
+		@include box-shadow(-1rem -0.5rem 1rem rgba($black-soft, 0.3));
 	}
 
 	// Icons
@@ -133,18 +129,18 @@
 		position: absolute;
 		left: 2rem;
 		top: 50%;
-		transform: translateY(-50%);
+		@include transform(translateY(-50%));
 		@media #{$lg} {
 			left: 2rem;
 		}
 		@media #{$xs} {
 			position: static;
-			transform: translateY(0%);
+			@include transform(translateY(0));
 			padding-bottom: 1rem;
 		}
 		@media #{$sm} {
 			position: absolute;
-			transform: translateY(-50%);
+			@include transform(translateY(-50%));
 			padding-bottom: 0;
 		}
 	}

@@ -1,8 +1,7 @@
 .roadmap-area {
 	position: relative;
 	z-index: 10;
-	padding-top: 10rem;
-	padding-bottom: 10rem;
+	padding: 10rem 0;
 }
 
 // Section Title
@@ -20,8 +19,7 @@
 		content: '';
 		left: -10rem;
 		top: 50%;
-		-webkit-transform: translateY(-50%);
-		transform: translateY(-50%);
+		@include transform(translateY(-50%));
 		height: 2px;
 		width: 9rem;
 		background: $secondary-color;
@@ -37,8 +35,7 @@
 		content: '';
 		right: -10rem;
 		top: 50%;
-		-webkit-transform: translateY(-50%);
-		transform: translateY(-50%);
+		@include transform(translateY(-50%));
 		height: 2px;
 		width: 9rem;
 		background: $secondary-color;
@@ -143,7 +140,7 @@
 		border-radius: 50%;
 		border: solid 0.5rem $secondary-color;
 		background: #311768;
-		transform: translateZ(0);
+		@include transform(translateZ(0));
 
 		&--complete {
 			background: $secondary-color;
@@ -154,21 +151,21 @@
 			top: 0.7rem;
 			width: 2rem;
 			height: 2rem;
-			transform: none;
+			@include transform(none);
 		}
 		@media #{$xs} {
 			left: -0.5rem;
 			top: 0.7rem;
 			width: 2rem;
 			height: 2rem;
-			transform: none;
+			@include transform(none);
 		}
 		@media #{$sm} {
 			left: -0.5rem;
 			top: 0.7rem;
 			width: 2rem;
 			height: 2rem;
-			transform: none;
+			@include transform(none);
 		}
 	}
 

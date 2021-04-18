@@ -20,8 +20,7 @@
 		content: '';
 		left: -10rem;
 		top: 50%;
-		-webkit-transform: translateY(-50%);
-		transform: translateY(-50%);
+		@include transform(translateY(-50%));
 		height: 2px;
 		width: 9rem;
 		background: $theme-color;
@@ -37,8 +36,7 @@
 		content: '';
 		right: -10rem;
 		top: 50%;
-		-webkit-transform: translateY(-50%);
-		transform: translateY(-50%);
+		@include transform(translateY(-50%));
 		height: 2px;
 		width: 9rem;
 		background: $theme-color;

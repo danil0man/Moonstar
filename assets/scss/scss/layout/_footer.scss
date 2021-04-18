@@ -75,6 +75,6 @@
 	cursor: pointer;
 	&:hover {
 		color: $secondary-color;
-		transform: scale(2) translateY(2rem);
+		@include transform(scale(2) translateY(2rem));
 	}
 }

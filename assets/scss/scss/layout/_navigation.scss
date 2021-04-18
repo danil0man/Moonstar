@@ -27,9 +27,9 @@
 	left: 0;
 	right: 0;
 	background: #041320;
-	box-shadow: 0 0.5rem 0.5rem 0 rgba(0, 0, 0, 0.04);
+	@include box-shadow(0 0.5rem 0.5rem 0 rgba(0, 0, 0, 0.04));
 	z-index: 999;
-	animation: sticky 1.2s;
+	@include animation(sticky 1.2s);
 }
 // Navbar
 .navbar {
@@ -91,7 +91,7 @@
 		background-color: rgba(39, 17, 86, 0.8);
 		z-index: 8;
 		padding: 1rem 1.6rem;
-		box-shadow: 0 2.6rem 4.8rem 0 rgba(0, 0, 0, 0.15);
+		@include box-shadow(0 2.6rem 4.8rem 0 rgba(0, 0, 0, 0.15));
 	}
 	// mobile
 	@media #{$xs} {
@@ -102,7 +102,7 @@
 		background-color: rgba(39, 17, 86, 0.8);
 		z-index: 8;
 		padding: 1rem 1.6rem;
-		box-shadow: 0 2.6rem 4.8rem 0 rgba(0, 0, 0, 0.15);
+		@include box-shadow(0 2.6rem 4.8rem 0 rgba(0, 0, 0, 0.15));
 	}
 }
 
@@ -130,7 +130,7 @@
 	color: $text-color !important;
 	text-transform: uppercase;
 	position: relative;
-	@include transition(1s);
+	@include transition(0.5s);
 	line-height: 6rem;
 	margin-right: 4rem;
 	padding: 0;
