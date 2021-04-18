@@ -168,7 +168,11 @@
                     <div class="col-lg-6">
                         <!-- Image Area -->
                         <div class="moon-about-img">
-                            <img src="assets/img/illustrations/astro.webp" alt="Moonstar Astronaut">
+                            <picture>
+                                <source type="image/webp" srcset="assets/img/illustrations/astro.webp">
+                                <source srcset="assets/img/illustrations/astro.png" type="image/png">
+                                <img src="assets/img/illustrations/astro.png" alt="Moonstar Astronaut">
+                            </picture>
                         </div>
                     </div>
                     <div class="col-lg-6">
@@ -547,7 +551,7 @@
 
     <!--====== toTop PART START ======-->
 
-    <a href="#" class="to-top"><span class="hidden">To Top</span><i class="fas fa-angle-up fa-3x"></i></a>
+    <a href="#" class="to-top"><span class="hidden text-bigger">To Top</span><i class="fas fa-angle-up fa-3x"></i></a>
 
     <!--====== toTop PART ENDS ======-->
 
