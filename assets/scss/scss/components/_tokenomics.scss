@@ -129,9 +129,9 @@
 
 	// Icons
 	&__img {
-		width: 12rem;
+		width: 15rem;
 		position: absolute;
-		left: 3rem;
+		left: 2rem;
 		top: 50%;
 		transform: translateY(-50%);
 		@media #{$lg} {
@@ -147,6 +147,10 @@
 			transform: translateY(-50%);
 			padding-bottom: 0;
 		}
+	}
+
+	&__content {
+		padding-left: 2rem;
 	}
 
 	// Title
