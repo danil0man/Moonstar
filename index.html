@@ -13,15 +13,459 @@
 
     <!-- Favicon Icon -->
     <link rel=" shortcut icon" href="./assets/img/favicon/moonstar-logo_1.webp" type="image/png">
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap");
 
-    <!-- Bootsrap CSS -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        html {
+            line-height: 1.15;
+            -webkit-text-size-adjust: 100%
+        }
 
-    <!-- Fontawesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+        body {
+            margin: 0
+        }
 
-    <!-- Style CSS -->
-    <link rel="stylesheet" href="assets/css/style.min.css">
+        h1 {
+            font-size: 2em;
+            margin: 0.67em 0
+        }
+
+        a {
+            background-color: transparent
+        }
+
+        img {
+            border-style: none
+        }
+
+        button {
+            font-family: inherit;
+            font-size: 100%;
+            line-height: 1.15;
+            margin: 0
+        }
+
+        button {
+            overflow: visible
+        }
+
+        button {
+            text-transform: none
+        }
+
+        button,
+        [type='button'] {
+            -webkit-appearance: button
+        }
+
+        button::-moz-focus-inner,
+        [type='button']::-moz-focus-inner {
+            border-style: none;
+            padding: 0
+        }
+
+        button:-moz-focusring,
+        [type='button']:-moz-focusring {
+            outline: 1px dotted ButtonText
+        }
+
+        ::-webkit-file-upload-button {
+            -webkit-appearance: button;
+            font: inherit
+        }
+
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: inherit
+        }
+
+        :root {
+            scroll-behavior: smooth
+        }
+
+        html {
+            font-size: 62.5%
+        }
+
+        body {
+            box-sizing: border-box;
+            font-family: 'Barlow', sans-serif;
+            font-weight: normal;
+            font-style: normal;
+            color: #ada2c3;
+            background: #311768;
+            overflow-x: hidden
+        }
+
+        img {
+            max-width: 100%
+        }
+
+        i,
+        span,
+        a {
+            display: inline-block
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none
+        }
+
+        h1 {
+            font-family: 'Barlow', sans-serif;
+            font-weight: 700;
+            color: #ada2c3;
+            margin: 0
+        }
+
+        h1 {
+            font-size: 4.8rem
+        }
+
+        .to-top {
+            position: fixed;
+            bottom: 3rem;
+            right: 3rem;
+            height: 4rem;
+            width: 4rem;
+            border-radius: 0.8rem;
+            background: #1fc9ee;
+            text-align: center;
+            line-height: 5.5rem;
+            color: #fff;
+            opacity: 0;
+            z-index: 999
+        }
+
+        .hidden {
+            display: none
+        }
+
+        .bg_cover {
+            background-position: center center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 100%
+        }
+
+        .mt-30 {
+            margin-top: 30px !important
+        }
+
+        .text-bigger {
+            font-size: 2.4rem
+        }
+
+        .banner-area {
+            height: 102rem;
+            position: relative
+        }
+
+        .banner-content {
+            padding-top: 30rem
+        }
+
+        @media (max-width:767px) {
+            .banner-content {
+                padding-top: 24rem
+            }
+        }
+
+        .banner-content li {
+            display: inline-block;
+            margin: 0 0.5rem
+        }
+
+        @media (max-width:767px) {
+            .banner-content li {
+                margin: 1rem 0 0
+            }
+        }
+
+        @media only screen and (min-width:576px) and (max-width:767px) {
+            .banner-content li {
+                margin: 0px
+            }
+        }
+
+        @media (max-width:767px) {
+            .banner-content li a {
+                padding: 0 2rem
+            }
+        }
+
+        .title {
+            color: #fff;
+            background: linear-gradient(120deg, #1fc9ee 0%, #f43a94 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 5rem;
+            line-height: 6rem;
+            font-weight: 600;
+            padding-bottom: 3rem
+        }
+
+        @media only screen and (min-width:768px) and (max-width:991px) {
+            .title {
+                font-size: 3.6rem;
+                line-height: 4rem
+            }
+        }
+
+        @media (max-width:767px) {
+            .title {
+                font-size: 4rem;
+                line-height: 6rem
+            }
+        }
+
+        @media only screen and (min-width:576px) and (max-width:767px) {
+            .title {
+                font-size: 3.8rem;
+                line-height: 4.8rem
+            }
+        }
+
+        .title__primary {
+            font-size: 10rem;
+            font-weight: 700;
+            padding-bottom: 3rem
+        }
+
+        @media (max-width:767px) {
+            .title__primary {
+                font-size: 7rem
+            }
+        }
+
+        .social {
+            position: absolute;
+            left: 5rem;
+            top: 50%;
+            transform: translateY(-50%)
+        }
+
+        .social a {
+            font-size: 2.4rem;
+            color: #fff;
+            margin: 1rem 0
+        }
+
+        @media (max-width:767px) {
+            .social {
+                display: none;
+                left: 2rem
+            }
+        }
+
+        @media only screen and (min-width:576px) and (max-width:767px) {
+            .social {
+                display: block
+            }
+        }
+
+        .main-btn {
+            margin-left: 1rem
+        }
+
+        .header__nav {
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            z-index: 99;
+            background-color: transparent;
+            padding: 0 1.5rem;
+            border-bottom: 1px solid #041320
+        }
+
+        @media only screen and (min-width:768px) and (max-width:991px) {
+            .header__nav {
+                padding: 0.5rem 0
+            }
+        }
+
+        @media (max-width:767px) {
+            .header__nav {
+                padding: 0.5rem 0
+            }
+        }
+
+        .navbar {
+            position: relative;
+            padding: 0
+        }
+
+        .navbar-brand {
+            margin-left: 0;
+            width: 7.5rem
+        }
+
+        .navbar-toggler {
+            padding: 1rem 1.2rem;
+            border-radius: 0;
+            border: 0
+        }
+
+        .toggler-icon {
+            width: 3rem;
+            height: 2px;
+            background-color: #fff;
+            margin: 0.5rem 0;
+            display: block;
+            position: relative
+        }
+
+        @media only screen and (min-width:768px) and (max-width:991px) {
+            .navbar-collapse {
+                position: absolute;
+                top: 106%;
+                left: 0%;
+                width: 100%;
+                background-color: rgba(39, 17, 86, 0.8);
+                z-index: 8;
+                padding: 1rem 1.6rem;
+                box-shadow: 0 2.6rem 4.8rem 0 rgba(0, 0, 0, 0.15)
+            }
+        }
+
+        @media (max-width:767px) {
+            .navbar-collapse {
+                position: absolute;
+                top: 106%;
+                left: -1.5rem;
+                width: 106%;
+                background-color: rgba(39, 17, 86, 0.8);
+                z-index: 8;
+                padding: 1rem 1.6rem;
+                box-shadow: 0 2.6rem 4.8rem 0 rgba(0, 0, 0, 0.15)
+            }
+        }
+
+        @media only screen and (min-width:768px) and (max-width:991px) {
+            .navbar-nav {
+                margin-right: 0
+            }
+        }
+
+        @media (max-width:767px) {
+            .navbar-nav {
+                margin-right: 0
+            }
+        }
+
+        .nav-item {
+            position: relative
+        }
+
+        .nav-link {
+            font-size: 1.8rem;
+            font-weight: 500;
+            color: #ada2c3 !important;
+            text-transform: uppercase;
+            position: relative;
+            line-height: 6rem;
+            margin-right: 4rem;
+            padding: 0;
+            font-family: "Barlow", sans-serif;
+            border-bottom: 2px solid transparent
+        }
+
+        @media only screen and (min-width:992px) and (max-width:1200px) {
+            .nav-link {
+                font-size: 1.4rem;
+                margin: 0 0.8rem
+            }
+        }
+
+        @media only screen and (min-width:1200px) and (max-width:1600px) {
+            .nav-link {
+                margin-right: 24px
+            }
+        }
+
+        @media only screen and (min-width:768px) and (max-width:991px) {
+            .nav-link {
+                color: #fff !important;
+                line-height: 6rem !important;
+                font-size: 1.4rem;
+                padding: 0;
+                display: block;
+                border: 0;
+                margin: 0
+            }
+        }
+
+        @media (max-width:767px) {
+            .nav-link {
+                color: #fff !important;
+                line-height: 6rem !important;
+                font-size: 1.4rem;
+                padding: 0;
+                display: block;
+                border: 0;
+                margin: 0
+            }
+        }
+
+        .main-btn {
+            display: inline-block;
+            font-weight: 700;
+            text-align: center;
+            white-space: nowrap;
+            text-transform: uppercase;
+            vertical-align: middle;
+            min-width: 15rem;
+            border: 0px;
+            padding: 0 3.2rem;
+            font-size: 1.4rem;
+            line-height: 5rem;
+            color: #fff !important;
+            z-index: 5;
+            border-radius: 4px;
+            background: linear-gradient(to right, #c90075 0%, #de00ac 50%, #c90075 100%);
+            background-size: 200% auto;
+            letter-spacing: 1px;
+            box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.1)
+        }
+
+        .main-btn.main-btn-2 {
+            background: linear-gradient(to right, #0065e8 0%, #11a2f1 50%, #0065e8 100%);
+            background-size: 200% auto
+        }
+
+        .moon-features-area {
+            padding-top: 1rem;
+            position: relative;
+            z-index: 11
+        }
+
+        .feature {
+            position: relative
+        }
+
+        .feature::before {
+            position: absolute;
+            content: '';
+            right: -1.5rem;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 1px;
+            height: 28.5rem;
+            background: #462f77
+        }
+
+        .feature__img {
+            width: 15rem
+        }
+    </style>
 </head>
 
 <body>
@@ -556,6 +1000,17 @@
     <a href="#" class="to-top"><span class="hidden text-bigger">To Top</span><i class="fas fa-angle-up fa-3x"></i></a>
 
     <!--====== toTop PART ENDS ======-->
+
+    <!--====== CSS Files ======-->
+
+    <!-- Bootsrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="assets/css/style.min.css">
 
     <!--====== SCRIPTS ======-->
     <!-- jquery js -->
