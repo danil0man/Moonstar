@@ -58,10 +58,6 @@
 		font-size: 3rem;
 		line-height: 3rem;
 	}
-	@media #{$sm} {
-		font-size: 3.8rem;
-		line-height: 3.2rem;
-	}
 	@media #{$lg} {
 		font-size: 3.8rem;
 		line-height: 3.2rem;
@@ -113,9 +109,6 @@
 	@media #{$xs} {
 		padding: 2rem;
 	}
-	@media #{$sm} {
-		padding: 4.8rem 3.5rem 4.9rem 16.4rem;
-	}
 
 	// Box Shadows
 	&-1 {
@@ -149,11 +142,6 @@
 			@include transform(translateY(0));
 			padding-bottom: 1rem;
 		}
-		@media #{$sm} {
-			position: absolute;
-			@include transform(translateY(-50%));
-			padding-bottom: 0;
-		}
 	}
 
 	&__content {
@@ -186,8 +174,5 @@
 	margin: 0 3px;
 	@media #{$xs} {
 		margin-top: 1rem;
-	}
-	@media #{$sm} {
-		margin-top: 0;
 	}
 }

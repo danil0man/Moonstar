@@ -58,10 +58,6 @@
 		font-size: 3rem;
 		line-height: 4rem;
 	}
-	@media #{$sm} {
-		font-size: 3.8rem;
-		line-height: 4.8rem;
-	}
 	@media #{$lg} {
 		font-size: 3.8rem;
 		line-height: 4.8rem;
@@ -90,10 +86,6 @@
 		}
 		@media #{$xs} {
 			top: 0.7rem;
-			left: 0.8rem;
-		}
-		@media #{$sm} {
-			top: 0;
 			left: 0.8rem;
 		}
 	}
@@ -125,9 +117,6 @@
 	@media #{$xs} {
 		margin: 3rem 0;
 	}
-	@media #{$sm} {
-		margin: 3rem 0;
-	}
 
 	// Milestone Indicator
 	&__point {
@@ -154,13 +143,6 @@
 			@include transform(none);
 		}
 		@media #{$xs} {
-			left: -0.5rem;
-			top: 0.7rem;
-			width: 2rem;
-			height: 2rem;
-			@include transform(none);
-		}
-		@media #{$sm} {
 			left: -0.5rem;
 			top: 0.7rem;
 			width: 2rem;

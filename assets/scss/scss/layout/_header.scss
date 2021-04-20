@@ -8,7 +8,7 @@
 .banner-content {
 	padding-top: 30rem;
 	@media #{$xs} {
-		padding-top: 24rem;
+		padding-top: 20rem;
 	}
 
 	// Button Adjustments
@@ -18,13 +18,9 @@
 		@media #{$xs} {
 			margin: 1rem 0 0;
 		}
-		@media #{$sm} {
-			margin: 0 0 4rem;
-		}
 		& a {
 			@media #{$xs} {
 				padding: 0 2rem;
-				margin-bottom: 2rem;
 			}
 		}
 	}
@@ -49,10 +45,6 @@
 	@media #{$xs} {
 		font-size: 4rem;
 		line-height: 6rem;
-	}
-	@media #{$sm} {
-		font-size: 3.8rem;
-		line-height: 4.8rem;
 	}
 }
 // Moon Title
@@ -86,10 +78,6 @@
 	@media #{$xs} {
 		display: none;
 		left: 2rem;
-	}
-	// Larger units/
-	@media #{$sm} {
-		display: block;
 	}
 }
 
