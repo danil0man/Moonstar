@@ -146,6 +146,12 @@
 
 	&__content {
 		padding-left: 2rem;
+		@media #{$lg} {
+			padding-left: 6rem;
+		}
+		@media #{$md} {
+			padding-left: 6rem;
+		}
 	}
 
 	// Title

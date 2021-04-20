@@ -188,7 +188,7 @@
 	}
 }
 // This was implemented mobile first and would had been quite tedious to make with the current breakpoints
-@media only screen and (min-width: 1170px) {
+@media only screen and (min-width: 992px) {
 	.roadmap__card {
 		width: 45%;
 		text-align: right;
