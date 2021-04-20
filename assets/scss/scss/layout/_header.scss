@@ -19,11 +19,12 @@
 			margin: 1rem 0 0;
 		}
 		@media #{$sm} {
-			margin: 0px;
+			margin: 0 0 4rem;
 		}
 		& a {
 			@media #{$xs} {
 				padding: 0 2rem;
+				margin-bottom: 2rem;
 			}
 		}
 	}
