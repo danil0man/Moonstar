@@ -75,7 +75,7 @@
 	&__items {
 		padding-left: 1rem;
 		&::marker {
-			color: $secondary-color;
+			color: $theme-color;
 			font-weight: 900;
 		}
 		@media #{$xs} {
@@ -85,12 +85,12 @@
 	}
 
 	&__link {
-		color: $secondary-color;
+		color: $theme-color;
 		font-weight: 600;
 		@include transition(0.5s);
 
 		&:hover {
-			color: $theme-color;
+			color: $secondary-color;
 		}
 	}
 }
