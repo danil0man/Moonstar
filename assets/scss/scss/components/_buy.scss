@@ -1,0 +1,119 @@
+.buy-area {
+	padding: 5rem 0;
+	@media #{$xs} {
+		padding: 0rem !important;
+	}
+}
+
+.item-2 {
+	position: relative;
+	z-index: 10;
+	margin-bottom: 5rem;
+	@media #{$xs} {
+		margin-bottom: 0rem !important;
+	}
+}
+
+// Content Area
+.buy {
+	margin-left: -5rem;
+	@media #{$md} {
+		margin: 3rem 0;
+	}
+	@media #{$xs} {
+		margin: 3rem 0 10rem;
+	}
+
+	// Line Effect
+	&__sub {
+		font-size: 2.4rem;
+		font-weight: 600;
+		text-transform: uppercase;
+		color: $secondary-color;
+		letter-spacing: 2px;
+		padding-right: 10rem;
+		position: relative;
+		&::after {
+			position: absolute;
+			content: '';
+			right: 0;
+			top: 50%;
+			@include transform(translateY(-50%));
+			height: 2px;
+			width: 9rem;
+			background: $secondary-color;
+		}
+	}
+
+	// Title
+	&__title {
+		font-size: 5rem;
+		line-height: 6rem;
+		text-transform: uppercase;
+		font-weight: 600;
+		color: $white;
+		letter-spacing: -1px;
+		padding-top: 0.5rem;
+		padding-bottom: 2rem;
+		@media #{$lg} {
+			font-size: 4rem;
+			line-height: 5rem;
+		}
+		@media #{$xs} {
+			font-size: 2.8rem;
+			line-height: 3.8rem;
+		}
+	}
+
+	// List
+	&__list {
+		padding-left: 2rem;
+		list-style-type: decimal;
+		font-size: 2rem;
+	}
+
+	&__items {
+		padding-left: 1rem;
+		&::marker {
+			color: $secondary-color;
+			font-weight: 900;
+		}
+		@media #{$xs} {
+			font-size: 1.8rem;
+			margin-top: 1rem !important;
+		}
+	}
+
+	&__link {
+		color: $secondary-color;
+		font-weight: 600;
+		@include transition(0.5s);
+
+		&:hover {
+			color: $theme-color;
+		}
+	}
+}
+
+// Image Area
+.buy-img {
+	padding-top: 10rem;
+	margin-right: -8rem;
+	margin-left: 8rem;
+	@media #{$laptop} {
+		margin: 0;
+	}
+	@media #{$lg} {
+		margin: 0;
+	}
+	@media #{$md} {
+		margin: 0;
+	}
+	@media #{$xs} {
+		padding-top: 0;
+		margin: 0;
+	}
+	& img {
+		width: 100%;
+	}
+}
