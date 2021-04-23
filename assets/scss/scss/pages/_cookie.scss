@@ -1,5 +1,5 @@
 .cookie-area {
-	padding: 5rem 0 20rem;
+	padding: 5rem 0 5rem;
 }
 
 .cookie {
@@ -19,7 +19,7 @@
 		font-size: 1.8rem;
 		font-weight: 600;
 		text-transform: uppercase;
-		color: $secondary-color;
+		color: $theme-color;
 		letter-spacing: 2px;
 	}
 
@@ -55,6 +55,66 @@
 		@media #{$xs} {
 			font-size: 1.6rem;
 			line-height: 2.5rem;
+		}
+
+		&--white {
+			color: $white;
+		}
+	}
+
+	&__card {
+		padding: 1rem 2rem;
+		border: 1px solid $theme-color;
+		border-radius: 0.5rem;
+		min-height: 25rem;
+		position: relative;
+		-webkit-transition: all 0.4s ease-out 0s;
+		transition: all 0.4s ease-out 0s;
+		border-radius: 4px;
+		// Hover Effect
+		background: -webkit-gradient(
+			linear,
+			left top,
+			right top,
+			from(#311768),
+			color-stop(50%, #4a0094),
+			to(#311768)
+		);
+		background: linear-gradient(
+			to right,
+			#311768 0%,
+			#4a0094 50%,
+			#311768 100%
+		);
+		background-size: 200% auto;
+		letter-spacing: 1px;
+		@include box-shadow(0px 2px 0px 0px rgba(0, 0, 0, 0.1));
+
+		&:hover {
+			background-position: right center;
+		}
+		@media #{$lg} {
+			padding: 1rem 2rem;
+		}
+		@media #{$md} {
+			padding: 1rem 2rem;
+		}
+		@media #{$xs} {
+			padding: 1rem;
+		}
+	}
+
+	&__name {
+		color: $theme-color;
+		font-weight: 600;
+	}
+
+	&__link {
+		color: $theme-color;
+		font-weight: 600;
+		@include transition(0.4s);
+		&:hover {
+			color: $secondary-color;
 		}
 	}
 }
