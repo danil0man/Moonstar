@@ -46,19 +46,3 @@
 	-moz-box-shadow: $value;
 	box-shadow: $value;
 }
-
-// Placeholder Mixins
-@mixin placeholder {
-	&.placeholder {
-		@content;
-	}
-	&:-moz-placeholder {
-		@content;
-	}
-	&::-moz-placeholder {
-		@content;
-	}
-	&::-webkit-input-placeholder {
-		@content;
-	}
-}
