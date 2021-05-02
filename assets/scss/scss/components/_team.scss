@@ -73,8 +73,8 @@
 		position: relative;
 		overflow: hidden;
 		& img {
-			width: 27rem;
-			height: 27rem;
+			width: 100%;
+			height: auto;
 			@include transition(0.3s);
 			&:hover {
 				@include transform(scale(1.1));
